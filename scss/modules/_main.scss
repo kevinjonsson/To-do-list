@@ -1,0 +1,90 @@
+body {
+  background-image: url("../img/background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  main {
+    display: flex;
+    justify-content: center;
+
+    .container {
+      width: 50%;
+
+      .card {
+        background-color: $background_color;
+        padding: 2em;
+        border-radius: 30px;
+        margin: 100px 0;
+      }
+
+      #addInput {
+        width: 98%;
+        padding: 10px 0;
+        font-size: 16px;
+      }
+
+      #list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+          padding: 12px;
+          background-color: $dark_grey;
+          font-size: 18px;
+          color: $text_color;
+        }
+
+        li:nth-child(odd) {
+          background-color: $light_grey;
+        }
+
+        li:first-letter {
+          text-transform: uppercase;
+        }
+      }
+
+      #done {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+          padding: 12px;
+          background-color: $dark_green;
+          font-size: 18px;
+          color: $text_color;
+          text-decoration: line-through;
+        }
+
+        li:nth-child(odd) {
+          background-color: $light_green;
+        }
+
+        li:first-letter {
+          text-transform: uppercase;
+        }
+      }
+
+      h2 {
+        margin: 20px 0;
+        text-decoration: underline;
+        font-family: $font;
+        color: $heading_color;
+      }
+
+      .allButton {
+        width: 137px;
+        padding: 10px 0;
+        background: $dark_grey;
+        color: $text_color;
+        text-align: center;
+        font-size: 16px;
+        transition: 0.3s;
+        border-radius: 5px;
+        margin-top: 20px;
+      }
+    }
+  }
+}

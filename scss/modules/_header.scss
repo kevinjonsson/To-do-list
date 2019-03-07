@@ -1,0 +1,51 @@
+header {
+  height: 3.5em;
+  background-color: $background_color;
+  position: -webkit-sticky;
+  top: 0;
+
+  .header_container {
+    .nav_content {
+      @include flex;
+
+      .logo {
+        padding: $padding;
+        font-weight: 700;
+        font-size: 0.7em;
+
+        a {
+          font-family: $font;
+          text-decoration: none;
+          color: $heading_color;
+        }
+      }
+    }
+  }
+  @include tablet {
+    height: 5em;
+
+    .header_container {
+      .nav_content {
+        @include flex;
+
+        .logo {
+          flex: 1;
+
+          h1 {
+            padding: $padding;
+          }
+        }
+      }
+    }
+  }
+  @include desktop {
+    .header_container {
+      @include flex;
+      justify-content: center;
+
+      .nav_content {
+        width: 70%;
+      }
+    }
+  }
+}

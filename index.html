@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>To-do list</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Mali" rel="stylesheet">
+  <script src="JS/demo.js"></script>
+</head>
+
+<body onload="loop()">
+  <header>
+    <div class="header_container">
+      <div class="nav_content">
+        <div class="logo">
+          <h1><a href="index.html">To-do list</a></h1>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <div class="card">
+        <h2 style="margin-top: 0;">Add To-do:</h2> <input placeholder="Title..." type="text" name="add" id="addInput">
+        <button style="margin-top: 1px;" class="allButton" onclick="addToDo()">Add</button>
+        <p id="error"></p>
+
+        <h2>To-do list</h2>
+        <ul id="list"></ul>
+        <button class="allButton" onclick="sortList()">Sort (A-Z) - (Z-A)</button>
+
+        <h2>Done</h2>
+        <ul id="done"></ul>
+
+        <button class="allButton" onclick="deleteAll()">Clear all</button>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>

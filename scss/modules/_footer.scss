@@ -1,0 +1,8 @@
+footer {
+  @include tablet {
+    @include flex;
+  }
+  @include desktop {
+    @include flex;
+  }
+}
